@@ -4,14 +4,13 @@
 #' @return
 #' @export
 #' @examples
-predict_skmean <- function(X, centroid)
-{
-  if (is.data.frame(X)) {
-    bin <- X
+predict_skmean <- function(x, centroid) {
+  if (is.data.frame(x)) {
+    bin <- x
   } else {
-    bin <- t(data.frame(X))
+    bin <- t(data.frame(x))
   }
-  #bin <- t(data.frame(c(-86,-90,-67,-88,-86,-84,-79), c(-86,-90,-97,-88,-89,-84,-79)))
+
   z <- 1
   if (nrow(bin) == 1 || is.vector(bin)) {
     z <- 2
