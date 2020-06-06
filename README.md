@@ -1,4 +1,4 @@
-# kmean and DBSCAN for R
+# kmeans and DBSCAN for R
 
 !Почему-то не работает если грузить из гита, но работает локально
  
