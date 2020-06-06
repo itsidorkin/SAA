@@ -1,10 +1,10 @@
-#' @name skmean
+#' @name skmeans
 #' @docType package
 #' @param
 #' @return
 #' @export
 #' @examples
-skmean <- function(x, k) {
+skmeans <- function(x, k) {
   bin <- x
   centroid <- dplyr::sample_n(bin, k)
   centr_clstr <- centroid

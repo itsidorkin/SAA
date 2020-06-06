@@ -1,10 +1,10 @@
-#' @name predict_skmean
+#' @name predict_skmeans
 #' @docType package
 #' @param
 #' @return
 #' @export
 #' @examples
-predict_skmean <- function(x, centroid) {
+predict_skmeans <- function(x, centroid) {
   if (is.data.frame(x)) {
     bin <- x
   } else {

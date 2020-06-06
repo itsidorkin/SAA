@@ -1,5 +1,5 @@
 Package: SAA
-Title: kmean and dbscan
+Title: kmeans and dbscan
 Version: 0.0.0.9000
 Depends: dplyr
 License: GPL-3
