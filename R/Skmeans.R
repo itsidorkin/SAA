@@ -5,7 +5,7 @@
 #' @export
 #' @examples
 skmeans <- function(x, k) {
-  bin <- x
+  bin <- data.frame(scale(x))
   centroid <- dplyr::sample_n(bin, k)
   centr_clstr <- centroid
   repeat {
@@ -30,7 +30,7 @@ skmeans <- function(x, k) {
         which.min(x)
       }
     )
-    for (ki in 1:4) {
+    for (ki in 1:k) {
       for (j in seq_len(ncol(bin))) {
         centr_clstr[ki, j] <-  mean(as.matrix(bin[clstr == ki, ][, j]))
       }
@@ -41,5 +41,5 @@ skmeans <- function(x, k) {
       centroid <- centr_clstr
     }
   }
-  return(list("Clstr" = clstr, "Cntr" = centr_clstr))
+  return(list("result" = cbind(x, "clstr" = factor(clstr)), "Cntr" = centr_clstr))
 }

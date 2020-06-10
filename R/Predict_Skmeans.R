@@ -6,9 +6,9 @@
 #' @examples
 predict_skmeans <- function(x, centroid) {
   if (is.data.frame(x)) {
-    bin <- x
+    bin <- data.frame(scale(x))
   } else {
-    bin <- t(data.frame(x))
+    bin <- t(data.frame(scale(x)))
   }
 
   z <- 1
