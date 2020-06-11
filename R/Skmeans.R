@@ -1,5 +1,3 @@
-#' @name skmeans
-#' @docType package
 #' @param
 #' @return
 #' @export
