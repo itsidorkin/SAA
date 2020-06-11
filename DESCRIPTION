@@ -7,7 +7,7 @@ Authors@R: c(
     person("Tt", "Ee",, "Ss@Tt.com", c("aut", "cre", "cph"))
     )
 Depends: R (>= 4.0.0)
-Suggests:
+Imports:
     dplyr
 URL: https://github.com/nikrodis/SAA
 Encoding: UTF-8
