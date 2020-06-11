@@ -4,9 +4,8 @@ Description: Test.
 Version: 0.0.0.9000
 License: GPL-3
 Authors@R: c(
-  person("T", "E", email = "S@T.com", role = c("aut", "cre"))
-  )
-
+    person("Tt", "Ee",, "Ss@Tt.com", c("aut", "cre", "cph"))
+    )
 Depends: R (>= 4.0.0)
 Suggests:
     dplyr
