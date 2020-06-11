@@ -4,7 +4,7 @@ Authors@R: c(
     person("T", "E", email = "S@T.com", role = c("aut", "cre"))
 Description: test.
 Version: 0.0.0.9000
-Depends: R (>=4.0.0)
+Depends: R (>= 4.0.0)
 Suggests:
     dplyr
 License: GPL-3
