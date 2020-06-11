@@ -1,12 +1,9 @@
 # kmeans and DBSCAN for R
 
-!Почему-то не работает если грузить из гита, но работает локально
- 
- #### Не работает
+## Установка
+
     devtools::install_github('nikrodis/SAA', force = T)
- #### Работает
-    setwd("C:/.../SAA") 
-    devtools::load_all()
+    
 ## Как пользоваться?
 
 Позже напишу (наверное)
