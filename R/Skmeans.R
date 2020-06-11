@@ -1,7 +1,6 @@
-#' @param
-#' @return
+#' @name skmeans
+#' @docType package
 #' @export
-#' @examples
 skmeans <- function(x, k) {
   bin <- data.frame(scale(x))
   centroid <- dplyr::sample_n(bin, k)
