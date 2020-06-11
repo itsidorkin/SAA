@@ -1,9 +1,6 @@
-#" @name sdbscan
-#" @docType package
-#" @param
-#" @return
-#" @examples
-#" @export
+#' @name sdbscan
+#' @return
+#' @export
 sdbscan <- function(x, e, minpts) {
   #bin <- data.frame(scale(x))
   bin <- data.frame(x)

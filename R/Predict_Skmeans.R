@@ -1,9 +1,6 @@
 #' @name predict_skmeans
-#' @docType package
-#' @param
 #' @return
 #' @export
-#' @examples
 predict_skmeans <- function(x, centroid) {
   if (is.data.frame(x)) {
     bin <- data.frame(scale(x))

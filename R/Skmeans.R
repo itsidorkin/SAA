@@ -1,5 +1,5 @@
 #' @name skmeans
-#' @docType package
+#' @return
 #' @export
 skmeans <- function(x, k) {
   bin <- data.frame(scale(x))
