@@ -38,6 +38,6 @@ skmeans <- function(x, k) {
       centroid <- centr_clstr
     }
   }
-  return(cbind(x, "clstr" = factor(clstr))
+  return(cbind(x, "clstr" = factor(clstr)))
   #return(list("result" = cbind(x, "clstr" = factor(clstr)), "Cntr" = centr_clstr))
 }
