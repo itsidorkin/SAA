@@ -39,5 +39,4 @@ skmeans <- function(x, k) {
     }
   }
   return(cbind(x, "clstr" = factor(clstr)))
-  #return(list("result" = cbind(x, "clstr" = factor(clstr)), "Cntr" = centr_clstr))
 }
