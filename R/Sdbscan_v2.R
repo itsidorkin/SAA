@@ -2,7 +2,6 @@
 #' @return
 #' @export
 sdbscan_v2 <- function(x, e, minpts) {
-  bin <- dplyr::sample_n(x, nrow(x))
   row.names(bin) <- c(1:nrow(bin))
   bin2 <- data.frame(bin, clstr = NA)
   kl <- 0
@@ -16,7 +15,7 @@ sdbscan_v2 <- function(x, e, minpts) {
         bin2[k, "clstr"] <- kl
         
         a <- a[-k,]
-        while (T) {
+        while (nrow(a) == 0) {
           kk <- as.numeric(rownames(a))[1]
           b <- bin2[dis[, kk] <= e,]
           
@@ -26,9 +25,6 @@ sdbscan_v2 <- function(x, e, minpts) {
           } 
           bin2[kk, "clstr"] <- kl
           a <- a[-1,]
-          if (nrow(a) == 0) {
-            break()
-          }
         } 
       } else {
         bin2[k, "clstr"] <- 0
