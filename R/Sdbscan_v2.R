@@ -2,6 +2,7 @@
 #' @return
 #' @export
 sdbscan_v2 <- function(x, e, minpts) {
+  bin <- x
   row.names(bin) <- c(1:nrow(bin))
   bin2 <- data.frame(bin, clstr = NA)
   kl <- 0
