@@ -16,7 +16,7 @@ sdbscan_v2 <- function(x, e, minpts) {
         bin2[k, "clstr"] <- kl
         
         a <- a[-k,]
-        while (nrow(a) == 0) {
+        while (nrow(a) != 0) {
           kk <- as.numeric(rownames(a))[1]
           b <- bin2[dis[, kk] <= e,]
           
@@ -33,5 +33,5 @@ sdbscan_v2 <- function(x, e, minpts) {
     }
   }
   bin2$clstr <- factor(bin2$clstr)
-  return("result" = bin2)
+  return(bin2)
 }
