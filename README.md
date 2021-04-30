@@ -2,5 +2,5 @@
 
 ## Установка
 
-    devtools::install_github('nikrodis/SAA', force = T)
+    devtools::install_github('itsidorkin/SAA', force = T)
     
